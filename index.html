@@ -265,19 +265,11 @@
         }
         
         .tagline span:nth-child(2) {
-            animation: fadeInTag 0.6s ease 2.3s forwards;
+            animation: fadeInTag 0.6s ease 2.5s forwards;
         }
         
         .tagline span:nth-child(3) {
-            animation: fadeInTag 0.6s ease 2.6s forwards;
-        }
-
-        .tagline span:nth-child(4) {
             animation: fadeInTag 0.6s ease 2.9s forwards;
-        }
-
-        .tagline span:nth-child(5) {
-            animation: fadeInTag 0.6s ease 3.2s forwards;
         }
         
         @keyframes fadeInTag {
@@ -455,13 +447,24 @@
         /* Responsive */
         @media (max-width: 768px) {
             .hero {
-                align-items: center;
-                padding-bottom: 0;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding: 6rem 5% 0 5%;
+            }
+            
+            .hero-content {
+                margin-top: 0;
             }
             
             .name {
-                font-size: 12vw;
-                text-align: center;
+                font-size: 15vw;
+                text-align: left;
+                line-height: 1;
+                margin-bottom: 2rem;
+            }
+            
+            .tagline {
+                font-size: 0.85rem;
             }
             
             .section-title {
@@ -486,13 +489,16 @@
             }
             
             .social-sidebar {
-                right: 10px;
-                padding: 1.5rem 1rem;
+                width: 60px;
+                padding: 2rem 0;
                 gap: 2rem;
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
             }
             
             .social-sidebar a {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
         }
     </style>
@@ -520,7 +526,7 @@
         <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn">
             <i class="fab fa-linkedin-in"></i>
         </a>
-        <a href="https://github.com/emo778866" target="_blank" title="GitHub">
+        <a href="https://github.com/yourprofile" target="_blank" title="GitHub">
             <i class="fab fa-github"></i>
         </a>
     </div>
@@ -531,8 +537,6 @@
             <h1 class="name">MEHEDI<br>HASAN<br>EMO</h1>
             <p class="tagline">
                 <span>Lecturer</span>
-                <span>Researcher</span>
-                <span>Web Developer</span>
                 <span>Competitive Programmer</span>
                 <span>AI Enthusiast</span>
             </p>
@@ -577,24 +581,24 @@
         <h2 class="section-title">Experience</h2>
         <div class="timeline">
             <div class="timeline-item">
-                <h3>Lecturer</h3>
-                <div class="date">February 2025 - Present</div>
-                <p>BRAC University</p>
+                <h3>Senior Creative Director</h3>
+                <div class="date">2022 - Present</div>
+                <p>Leading a team of designers and developers to create award-winning digital experiences for global brands. Responsible for creative vision, strategy, and execution across multiple high-profile projects.</p>
             </div>
             <div class="timeline-item">
-                <h3>Adjunct Lecturer</h3>
-                <div class="date">September 2023 - January 2025</div>
-                <p>BRAC University</p>
+                <h3>Lead UI/UX Designer</h3>
+                <div class="date">2019 - 2022</div>
+                <p>Spearheaded the design of enterprise applications and consumer-facing products, establishing design systems and workflows that improved team efficiency by 40%.</p>
             </div>
             <div class="timeline-item">
-                <h3>J2Ee Developer</h3>
-                <div class="date">April 2023 - July 2023</div>
-                <p>BJIT Academy</p>
+                <h3>Full-Stack Developer</h3>
+                <div class="date">2016 - 2019</div>
+                <p>Built scalable web applications using modern frameworks and technologies. Collaborated closely with design teams to bridge the gap between concept and implementation.</p>
             </div>
             <div class="timeline-item">
-                <h3>Web Developer</h3>
-                <div class="date">April 2019 - September 2019</div>
-                <p>CodeTrust Bangladesh</p>
+                <h3>Junior Designer</h3>
+                <div class="date">2014 - 2016</div>
+                <p>Started my journey crafting digital interfaces and learning the fundamentals of user-centered design, working on diverse projects that shaped my creative foundation.</p>
             </div>
         </div>
     </section>
